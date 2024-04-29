@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .cic{
+            text-align:center;
+            padding:10px;
+            background-color: orange;
+            border:20px;
+            margin-left: 400px;
+            margin-right:400px;
+            margin-top: 180px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        
+        }
+        
+        .submit{
+            text-decoration:none;
+            border:2px solid black;
+            background-color:skyblue;
+            font-size:25px;
+            border-radius: 8px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    
+    <form class="cic">
+        <h1 style="font-size:50px;text-align:center;color:blue;">college admin login</h1>
+        <br>
+        <br>
+        <label style="font-size: 25px;">college id:</label>
+        <input type="number" id="id">
+        <br>
+        <br>
+        <label style="font-size:25px;">password:</label>
+        <input type="password" id="pass">
+        <br>
+        <br>
+        <button onclick="fun1()"  class="submit" >submit</button>
+        <br>
+        <br>
+        <br>
+    </form>
+    <script>
+        var clg_id=352;
+        var clg_password="1234";
+        function fun1(){
+            var clg=document.getElementById('id').value;
+            var password=document.getElementById('pass').value;
+            if(clg_id==clg && clg_password==password){
+                 window.open("table.html")
+            }
+            else{
+                 document.write("only college admin can access");
+            }
+        }
+    </script>
+    
+
+</body>
+</html>
